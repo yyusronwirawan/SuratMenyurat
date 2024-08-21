@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment in Progress</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #3498db, #6ab1f7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+        .deployment-container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+        }
+
+        .deployment-icon {
+            font-size: 60px;
+            color: #3498db;
+        }
+
+        .deployment-text {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .loading-spinner {
+            margin: 30px auto;
+            border: 6px solid rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="deployment-container">
+    <div class="deployment-icon">&#x1F6A7;</div>
+    <div class="deployment-text">
+        <p><strong>Deployment in Progress</strong></p>
+        <p>Maaf, untuk 1 jam ke depan website belum bisa digunakan.</p>
+    </div>
+    <div class="loading-spinner"></div>
+</div>
+
+</body>
+</html>
